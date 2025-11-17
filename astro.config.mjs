@@ -141,7 +141,7 @@ export default defineConfig({
         // Search: './src/components/Search.astro',
       },
     social: [
-      { label: 'GitHub', icon: 'github', href: 'https://github.com/maindraster/maindraster.github.io' },
+      { label: 'GitHub', icon: 'github', href: 'https://github.com/maindraster/starlight-blog' },
       { label: 'BiliBili', icon: 'youtube', href: 'https://space.bilibili.com/3546706348084176' },
       // 其他社交链接...
     ],
