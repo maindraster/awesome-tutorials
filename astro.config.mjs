@@ -4,7 +4,6 @@ import starlightImageZoom from 'starlight-image-zoom';
 import remarkMath from "remark-math";
 import rehypeMathjax from 'rehype-mathjax'
 import rehypeKatex from 'rehype-katex'
-import starlightGiscus from 'starlight-giscus'
 import tailwind from "@astrojs/tailwind";
 import vercel from '@astrojs/vercel';
 import starlightThemeNova from 'starlight-theme-nova'
@@ -83,7 +82,10 @@ export default defineConfig({
                   link: '/s2/zero2hero'
                 },
                 { label: '理论学习',
-                  autogenerate: {directory: '/s2/ll'}
+                  items: [
+                    { label: '概率与统计', autogenerate: {directory:'/s2/ll/prob'}},
+                    { label: '线性代数与矩阵论', autogenerate: {directory:'/s2/ll/tom'}},
+                  ]
                 },
                 { label: '实操',
                   autogenerate: {directory: '/s2/sim'}
@@ -97,24 +99,15 @@ export default defineConfig({
               zero: ['/s1/project/cpuzz', '/s1/project/ysyx/*','/s1/project/11b','/s1/ai/**/*','/s1/electronics/**/*'],
             },
           }),
-      starlightGiscus({
-        repo: 'maindraster/docgiscus',
-        repoId: 'R_kgDON-oOVQ',
-        category:'Q&A',
-        categoryId:'DIC_kwDON-oOVc4CnRog',
-        theme:'catppuccin_latte',
-        lazy: true
-    }),
     starlightImageZoom(),
     starlightPageActions(),
     // starlightUtils({
     //   navLinks: {
     //   leading: { useSidebarLabelled:  "leading"  } ,
     // }})
-    starlightThemeNova({
-    }), 
+    //starlightThemeNova({}), 
     ],
-    title: ' 万工笔记',
+    title: '万工笔记',
     tableOfContents: { minHeadingLevel: 2,
        maxHeadingLevel: 4
        },
@@ -133,16 +126,17 @@ export default defineConfig({
       './src/styles/droptopic.css',
       './src/fonts/font-face.css',
       './src/styles/katex.css',
+      './src/styles/nova.css'
     ],
     components: {
-        //PageTitle: './src/components/PageTitle.astro',
         PageFrame: './src/components/PageFrame.astro',
         Sidebar: './src/components/Sidebar.astro',
-        // Search: './src/components/Search.astro',
+        // MarkdownContent: './src/components/MarkdownContent.astro',
       },
     social: [
       { label: 'GitHub', icon: 'github', href: 'https://github.com/maindraster/starlight-blog' },
       { label: 'BiliBili', icon: 'youtube', href: 'https://space.bilibili.com/3546706348084176' },
+      { label: 'RSS', icon: 'rss', href: 'https://tang.bearblog.dev/' },
       // 其他社交链接...
     ],
   }),

@@ -17,6 +17,9 @@ importers:
       astro:
         specifier: ^5.6.1
         version: 5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1)
+      astro-theme-toggle:
+        specifier: ^0.8.0
+        version: 0.8.0
       rehype-katex:
         specifier: ^7.0.1
         version: 7.0.1
@@ -57,9 +60,6 @@ importers:
       starlight-blog:
         specifier: ^0.25.0
         version: 0.25.0(@astrojs/starlight@0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1)))(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1))
-      starlight-giscus:
-        specifier: ^0.8.1
-        version: 0.8.1(@astrojs/starlight@0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1)))
       starlight-image-zoom:
         specifier: ^0.13.2
         version: 0.13.2(@astrojs/starlight@0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1)))
@@ -2599,12 +2599,6 @@ packages:
     engines: {node: '>=18.20.8'}
     peerDependencies:
       '@astrojs/starlight': '>=0.33.0'
-
-  starlight-giscus@0.8.1:
-    resolution: {integrity: sha512-etgWym6KpHeNSkbggEhpGEPNaLIwypWdvE7BxNFHGUkjiq6EYSJhr5zoMGZ9QfnMdkcj8PqKrJTM88YdCSEiDQ==}
-    engines: {node: ^18.20.8 || ^20.3.0 || >=22.0.0}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.35.0'
 
   starlight-image-zoom@0.13.2:
     resolution: {integrity: sha512-fDJrx+UZXhkbhEeXKoRogTKAYtrYVJPw6wmSUI3nHUTA0vuRM6EI//2Z8bzv3Ecvz0pHKD1vAxtS01mLyessBA==}
@@ -6308,10 +6302,6 @@ snapshots:
     transitivePeerDependencies:
       - astro
       - supports-color
-
-  starlight-giscus@0.8.1(@astrojs/starlight@0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1))):
-    dependencies:
-      '@astrojs/starlight': 0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1))
 
   starlight-image-zoom@0.13.2(@astrojs/starlight@0.36.2(astro@5.15.4(@types/node@24.10.0)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1))):
     dependencies:

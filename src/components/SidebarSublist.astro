@@ -219,14 +219,12 @@ const { sublist, nested = false } = Astro.props
 
   /* 当前页高亮：金色柔光底 */
   .entry-link[aria-current='page'] {
-    background-color: #fff7e6;
-    color: #b88400;
+    background-color: var(--sub-color-bg);
+    color: var(--sub-color);
     font-weight: 400;
   }
 
-  .entry-link[aria-current='page']:hover {
-    background-color: #ffefcc;
-  }
+
 
   /* ===== 子层级 ===== */
   .container-group-link {

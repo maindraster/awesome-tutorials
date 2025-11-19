@@ -1,6 +1,7 @@
 ---
 import Search from 'starlight-theme-nova/components/Search.astro';
-import MobileMenuFooter from 'starlight-theme-nova/components/MobileMenuFooter.astro';
+//import MobileMenuFooter from 'starlight-theme-nova/components/MobileMenuFooter.astro';
+import MobileMenuFooter from './MobileMenuFooter.astro';
 import TopicsDropdown from './TopicsDropdown.astro';
 import SidebarSublist from './SidebarSublist.astro';
 import config from 'virtual:starlight/user-config';
@@ -17,10 +18,11 @@ const shouldRenderSearch =
   <div class="sidebar-top-fixed">
     <div class="title-wrapper">
       <div class="title-with-toggle">
-        <span class="site-title">∀ 万工笔记</span>
+        <span class="site-title">万工笔记</span>
         <button 
           id="sidebar-collapse-btn" 
           class="sidebar-toggle-btn"
+          aria-label="折叠侧边栏"
         >
           <i class="iconfont icon-menu"></i>
         </button>

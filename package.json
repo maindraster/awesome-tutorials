@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.36.2",
     "@pagefind/default-ui": "^1.4.0",
     "astro": "^5.6.1",
+    "astro-theme-toggle": "^0.8.0",
     "rehype-katex": "^7.0.1",
     "rehype-mathjax": "^7.1.0",
     "sharp": "^0.34.2",
@@ -28,7 +29,6 @@
     "micromatch": "^4.0.8",
     "remark-math": "^6.0.0",
     "starlight-blog": "^0.25.0",
-    "starlight-giscus": "^0.8.1",
     "starlight-image-zoom": "^0.13.2",
     "starlight-site-graph": "^0.5.0",
     "starlight-theme-nova": "^0.10.0"

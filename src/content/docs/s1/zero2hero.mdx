@@ -3,11 +3,13 @@ title: 写在前面
 lastUpdate: 2025-11-10
 ---
 
-![s](../../../assets/special/bg.jpg)
+import { Image } from 'astro:assets';
+import bgImage from '../../../assets/special/bg.jpg';
+
+<Image src={bgImage} alt="s" loading="eager" fetchpriority="high" />
 
 :::caution[情况说明]
 原文为自我介绍，仓库已进行归档。
-
 **基础与拓展**系列主要部分于2024年9月至12月完成，后续进行过几次增补，增补工作将在未来九年继续。**欢迎各读者投稿完善！鄙人感激不尽！**
 :::
 
