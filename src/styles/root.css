@@ -21,7 +21,7 @@
   --sub-color:#856E00;
   --sl-color-text-accent: var(--sl-color-accent-high);
   .right-sidebar a:not([aria-current="true"]) {
-    color: #7D878C;
+    color: #9ca3af;
   }
 }
 

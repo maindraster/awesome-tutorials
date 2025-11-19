@@ -108,6 +108,7 @@ export default defineConfig({
     //starlightThemeNova({}), 
     ],
     title: '万工笔记',
+    description:'工科小白零门槛入门教程！覆盖前后端、嵌入式、电子设计、人工智能、MATLAB、建模、机器人仿真等技术领域，足够全面，配套手把手教学视频，足够细致。文档与视频全部开源免费，助你轻松开启工科学习之路！诚邀建议反馈与投稿。',
     tableOfContents: { minHeadingLevel: 2,
        maxHeadingLevel: 4
        },
@@ -124,7 +125,7 @@ export default defineConfig({
       './src/styles/scrollbar.css',
       './src/styles/sidebar.css',
       './src/styles/droptopic.css',
-      './src/fonts/font-face.css',
+      './src/styles/font-face.css',
       './src/styles/katex.css',
       './src/styles/nova.css'
     ],

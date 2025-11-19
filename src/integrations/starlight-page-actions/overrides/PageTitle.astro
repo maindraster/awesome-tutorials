@@ -28,9 +28,6 @@ const options = [
 ---
 
 <h1>{Astro.locals.starlightRoute.entry.data.title}</h1>
-{Astro.locals.starlightRoute.entry.data.description && (
-  <p class="page-description">{Astro.locals.starlightRoute.entry.data.description}</p>
-)}
 <div class="actions-container">
   <button class="action-button" id="copy-markdown" data-path={currentPath}>
     <Icon name="mdx" size="1rem" class="icon-default" />
